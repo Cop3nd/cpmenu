@@ -1,0 +1,6 @@
+{
+  "id": "hello", "name": "Hello", "version": "1.0.0", "author": "me",
+  "description": "Greets you and demonstrates actions",
+  "keyword": "hello", "tag": "HELLO",
+  "run": { "interpreter": "python", "file": "main.py" }
+}

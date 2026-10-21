@@ -1,0 +1,6 @@
+{
+  "id": "hellops", "name": "Hello PS", "version": "1.0.0", "author": "me",
+  "description": "PowerShell example",
+  "keyword": "hps", "tag": "PS",
+  "run": { "interpreter": "powershell", "file": "main.ps1" }
+}

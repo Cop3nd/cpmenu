@@ -1,0 +1,5 @@
+/target
+/dist
+
+# Maintenance scripts stay local (the example plugin's main.ps1 is tracked).
+/*.ps1

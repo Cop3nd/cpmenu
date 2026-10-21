@@ -1,0 +1,300 @@
+# cpmenu UI strings. Every key is a stable id (table path + key, e.g. power.shutdown).
+# Copy this file to %APPDATA%\cpmenu\lang\<code>.toml and translate it to add a language;
+# keys you leave out fall back to English. Single entries can also be overridden from the
+# [text] table of config.toml. {n} stands for a number.
+# Color row names in the settings (settings.color.<table>.<key>, e.g. settings.color.row.border)
+# default to the key name in capitals and are not listed here.
+
+[header]
+title = "NETRUNNER_OS // START"
+subtitle = "AVAILABLE PROGRAMS:"
+actions = "ACTIONS"
+
+[header.matches]
+one = "{n} MATCH"
+many = "{n} MATCHES"
+
+[status]
+scanning = "SCANNING ..."
+no_matches = "NO MATCHES"
+
+[tag]
+app = "APP"
+pinned = "PINNED"
+recent = "RECENT"
+file = "FILE"
+dir = "DIR"
+cmd = "CMD"
+calc = "CALC"
+web = "WEB"
+open = "OPEN"
+set = "SET"
+exec = "EXEC"
+# Plugin rows show their plugin's own tag.
+
+[row]
+hint = "ENTER ↵"
+
+[row.detail]
+shell = "CTRL+ENTER AS ADMIN"
+calc = "ENTER COPIES"
+web = "IN DEFAULT BROWSER"
+
+[power]
+lock = "LOCK"
+sleep = "SLEEP"
+sign_out = "SIGN OUT"
+restart = "RESTART"
+shutdown = "SHUTDOWN"
+
+[act]
+run = "RUN"
+run_admin = "RUN AS ADMIN"
+open = "OPEN"
+open_location = "OPEN FILE LOCATION"
+copy_path = "COPY PATH"
+copy_name = "COPY NAME"
+terminal = "OPEN TERMINAL HERE"
+properties = "PROPERTIES"
+uninstall = "UNINSTALL"
+pin = "PIN"
+unpin = "UNPIN"
+copy = "COPY"
+
+[plugin]
+# {name}, {version}, {author}, {command} and {message} are filled in.
+who = "PLUGIN {name} v{version} BY {author}"
+runs = "WANTS TO RUN: {command}"
+allow = "ALLOW {name}"
+ignore = "IGNORE"
+error = "PLUGIN ERROR - {message}"
+failed = "{name} KEPT FAILING - SEE ITS LOG"
+slow = "{name} IS NOT ANSWERING"
+
+[dialog]
+caption = "// SYSTEM OVERRIDE"
+prompt = "CONFIRM?"
+execute = "[ENTER] EXECUTE"
+abort = "[ESC] ABORT"
+
+[popup]
+paste = "PASTE"
+settings = "SETTINGS"
+
+[settings]
+title = "DATA // SETTINGS"
+
+[settings.tab]
+colors = "COLORS"
+look = "LOOK"
+layout = "LAYOUT"
+behavior = "BEHAVIOR"
+plugins = "PLUGINS"
+
+[settings.section]
+header = "HEADER"
+row = "ROW"
+tag = "TAG"
+power = "POWER"
+panel = "PANEL"
+popup = "POPUP"
+overlay = "OVERLAY"
+plugins_none = "NO PLUGINS FOUND"
+fonts = "FONTS"
+dimming = "DIMMING"
+elements = "ELEMENTS"
+
+[settings.row]
+header_toggles = "HEADER ELEMENTS"
+theme = "THEME"
+save_theme = "SAVE AS THEME"
+side = "SIDE"
+width = "WIDTH %"
+rows = "ROWS"
+arc = "ARC SHIFT"
+backdrop = "BACKDROP"
+hotkey = "HOTKEY"
+short_list = "SHORT LIST"
+band = "BAND"
+gui_scale = "GUI SCALE"
+contrast = "HIGH CONTRAST"
+icons = "ICONS"
+actions = "ACTIONS"
+actions_anchor = "POP-OUT POSITION"
+actions_x = "OFFSET X"
+actions_y = "OFFSET Y"
+file_search = "FILE SEARCH"
+file_results = "FILE RESULTS"
+recent = "RECENT"
+clear_history = "CLEAR HISTORY"
+language = "LANGUAGE"
+autostart = "AUTOSTART"
+title = "TITLE"
+subtitle = "SUBTITLE"
+tutorial = "RUN TUTORIAL"
+plugins = "PLUGINS"
+plugins_folder = "PLUGINS FOLDER"
+plugin_state = "STATE"
+plugin_enabled = "ENABLED"
+plugin_approve = "APPROVE"
+plugin_keyword = "KEYWORD"
+plugin_global = "GLOBAL"
+plugin_log = "OPEN LOG"
+font = "FONT"
+
+[settings.fontrole]
+header = "HEADER"
+query = "QUERY"
+name = "NAME"
+tag = "TAG"
+hint = "HINT"
+detail = "DETAIL"
+caption = "CAPTION"
+label = "LABEL"
+value = "VALUE"
+button = "BUTTON"
+dialog_title = "DIALOG TITLE"
+dialog_text = "DIALOG TEXT"
+
+[settings.weight]
+default = "DEFAULT"
+light = "LIGHT"
+normal = "NORMAL"
+semibold = "SEMIBOLD"
+bold = "BOLD"
+
+[settings.shape]
+row_radius = "ROW RADIUS"
+panel_radius = "PANEL RADIUS"
+tag_radius = "TAG RADIUS"
+icon_radius = "ICON RADIUS"
+corner = "CORNER"
+border_width = "BORDER WIDTH"
+row_height = "ROW HEIGHT"
+row_gap = "ROW GAP"
+tag_padding = "TAG PADDING"
+tag_gap = "TAG GAP"
+tag_height = "TAG HEIGHT"
+
+[settings.show]
+color_icons = "COLOR ICONS"
+dim_unselected = "DIM UNSELECTED"
+edge_fade = "FADE AT EDGES"
+caption_align = "ALIGN CAPTION"
+title_align = "ALIGN TITLE"
+count_align = "ALIGN COUNT"
+scanlines = "SCANLINES"
+glow = "GLOW"
+name = "ROW NAME"
+tags = "TAGS"
+detail = "PATH LINE"
+hint = "ENTER HINT"
+power_bar = "POWER BAR"
+count = "MATCH COUNT"
+progress = "PROGRESS STRIP"
+caption = "TITLE"
+subtitle = "SUBTITLE"
+header_line = "HEADER LINE"
+gear = "SETTINGS GEAR"
+open_glitch = "OPEN GLITCH"
+row_cascade = "ROW CASCADE"
+header_backdrop = "HEADER BACKDROP"
+
+[settings.value]
+round = "ROUND"
+chamfer = "CHAMFER"
+on = "ON"
+off = "OFF"
+left = "LEFT"
+right = "RIGHT"
+auto = "AUTO"
+top = "TOP"
+center = "CENTER"
+mid = "MID"
+bottom = "BOTTOM"
+list = "LIST"
+popout = "POPOUT"
+row = "ROW"
+cursor = "CURSOR"
+press_keys = "PRESS KEYS..."
+type_hex = "TYPE HEX"
+type_name = "TYPE NAME"
+type_text = "TYPE TEXT"
+global = "GLOBAL"
+enter = "ENTER"
+stopped = "STOPPED"
+starting = "STARTING"
+running = "RUNNING"
+failed = "FAILED"
+disabled = "DISABLED"
+not_approved = "NOT APPROVED"
+manifest_error = "ERROR"
+
+[settings.state]
+custom = "CUSTOM"
+theme_default = "THEME DEFAULT"
+
+[settings.note]
+style_error = "STYLE.TOML HAS ERRORS"
+invalid_hex = "INVALID HEX: #RRGGBB OR #RRGGBBAA"
+hex_overrides = "HEX OVERRIDES IN CONFIG.TOML"
+hotkey_in_use = "HOTKEY IN USE"
+config_error = "CONFIG.TOML HAS ERRORS"
+overwrite_theme = "ENTER TO OVERWRITE"
+delete_theme = "DELETE AGAIN TO REMOVE"
+builtin_name = "BUILT-IN THEME NAME"
+empty_name = "TYPE A NAME"
+theme_not_saved = "THEME NOT SAVED"
+autostart_failed = "AUTOSTART NOT CHANGED"
+keyword_in_use = "KEYWORD USED BY ANOTHER PLUGIN"
+keyword_invalid = "KEYWORD: A-Z 0-9 _ - UP TO 16"
+approve_plugin = "ENTER AGAIN: LET IT RUN AS YOU"
+log_failed = "LOG NOT OPENED"
+clear_history = "ENTER AGAIN: FORGET WHAT YOU LAUNCHED"
+history_cleared = "HISTORY CLEARED"
+
+[settings.detail]
+failed = "FAILED 3 TIMES - ENTER TO TRY AGAIN"
+not_approved = "NOT ALLOWED TO RUN YET - SEE APPROVE"
+runs = "RUNS AS YOU: {command}"
+keyword_lost = "KEYWORD TAKEN BY ANOTHER PLUGIN - INACTIVE"
+global_privacy = "EVERY QUERY YOU TYPE IS SENT TO THIS PLUGIN"
+color_keys = "◂ ▸ COLOR   SHIFT+◂▸ OPACITY   DEL RESET"
+font_keys = "ENTER CHOOSE   DEL RESET"
+toggles_keys = "ENTER OPEN   DEL RESET"
+toggles = "▴ ▾ MOVE   ENTER OR ◂ ▸ FLIP   ESC CLOSE"
+dropdown = "TYPE FILTER   ▴ ▾ MOVE   ENTER OK   ESC CLOSE"
+dropdown_role = "◂ ▸ SIZE, WEIGHT   ENTER OK   ESC CLOSE"
+
+[settings.dropdown]
+size = "SIZE"
+weight = "WEIGHT"
+filter = "TYPE TO FILTER"
+none = "NO MATCH"
+symbol = "SYMBOL"
+
+[settings.button]
+config = "OPEN CONFIG.TOML"
+style = "OPEN STYLE.TOML"
+
+[wizard]
+title = "STEP {n}/{total}"
+back = "BACK"
+skip = "SKIP"
+next = "NEXT"
+finish = "FINISH"
+keys = "◂ ▸ CHANGE   ENTER NEXT   BACKSPACE BACK   ESC SKIP"
+
+[wizard.step]
+language = "LANGUAGE"
+hotkey = "HOTKEY"
+layout = "LAYOUT"
+theme = "THEME"
+autostart = "AUTOSTART"
+
+[wizard.text]
+language = "CHOOSE THE MENU LANGUAGE.\nAUTO FOLLOWS WINDOWS."
+hotkey = "PRESS THE KEY OR COMBINATION\nTHAT OPENS THE MENU.\nENTER KEEPS THE CURRENT ONE."
+layout = "PICK THE SIDE OF THE SCREEN AND\nHOW A ROW'S ACTIONS OPEN: AS A LIST\nOR AS A POP-OUT MENU. SEE IT LIVE."
+theme = "PICK THE COLORS.\nTHE MENU CHANGES AS YOU GO."
+autostart = "START CPMENU WITH WINDOWS.\nFINISH CLOSES THE TUTORIAL."
